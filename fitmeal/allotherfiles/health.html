@@ -1,0 +1,841 @@
+<html>
+    <head>
+        <title>
+            prototype of stick nav bar
+        </title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <link rel="stylesheet" href="../Styles/top.css">
+      <link rel="stylesheet" href="./navbar.css">
+        <link rel="stylesheet" href="productlisting.css">
+        
+        <style>
+           
+            .banner{
+                width: 100%;
+                height: 490px;
+               margin-top: 6%;
+               
+                position: relative;
+                overflow: hidden;
+            }
+            .slider{
+                width: 100%;
+                height: 490px;
+               
+              
+                position: absolute;
+                
+                overflow: hidden;
+
+            }
+            #slideimg {
+                width: 100%;
+                height: 100%;
+                animation: zoom 10s linear infinite;
+            }
+            @keyframes zoom {
+                0%{
+                    transform: scale(1.1);
+                }
+                15%{
+                    transform: scale(1.2);
+                }
+                30%{
+                    transform: scale(1.3);
+                }
+                45%{
+                    transform: scale(1.4);
+                }
+                85%{
+                    transform: scale(1.5);
+                }
+                100%{
+                    transform: scale(1.6);
+                }
+            }
+          
+            .overlay
+            {
+                width: 100%;
+                height: 100%;
+               
+                position: absolute;
+                top: 0;
+            }
+            .content{
+                width: 60%;
+                margin: 180px auto 0;
+                text-align: center;
+                color: white;
+            }
+            .content h1{
+                font-size: 45px;
+
+            }
+            .content h3{
+                width: 80%;
+                margin: 20px auto 100px;
+                font-weight: 100;
+                line-height: 25px;
+
+                
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .first{
+                width: 100%;
+                height: 30px;
+                background-color: white;
+            }
+            .border{
+                width: 100%;
+                height: 12px;
+                background-color: #cecece;
+            }
+            .rightbuttom{
+                border: 2px solid white;
+                border-radius: 50%;
+                background-color: transparent;
+                position: relative;
+                top: 55%;
+                left: 91%;
+            }
+            .rightbuttom:hover{
+                background-color: white;
+            }
+            .leftbuttom{
+                border: 2px solid white;
+                border-radius: 50%;
+                background-color: transparent;
+                position: relative;
+                top: 35%;
+                left: 82.8%;
+              
+            }
+            .leftbuttom:hover{
+                background-color: white;
+            }
+            .iconsection{
+                width: 100%;
+                height: 330px;
+               
+            }
+            .firstrow,.secondrow{
+                width: 100%;
+                height: 50%;
+               
+                display: flex;
+                background-color:rgb(142,192,56);
+            }
+            .fc1,.fc2,.fc3{
+               
+                width: 30%;
+                text-align: center;
+                align-items: center;
+               
+                font-weight: 550;
+            }
+            .imga{
+                width: 20%;
+                height: 30%;
+                margin: auto;
+                margin-top: 16%;
+                margin-bottom: 3%;
+            }
+            .borderr1{
+                width: 0.4%;
+                margin-top: 5%;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                height: 55%;
+                background-color:rgb(151,197,71);
+            }
+            .appointment{
+                width: 100%;
+                height: 380px;
+                
+                display: flex;
+              
+               background-color:rgb(243,245,237);
+            }
+            .textcol{
+                width: 39%;
+                height: 75%;
+                color: black;
+              
+                margin-top: 9%;
+                margin-left: 5%;
+
+            }
+            .time{
+                width: 100%;
+                height: 15%;
+               
+                display: flex;
+                margin-top: 10%;
+            }
+            .number{
+                width: 100%;
+                height: 15%;
+               
+                display: flex;
+                margin-top: 3%;
+                margin-left: 1%;
+            }
+            .imgcol{
+                width: 45%;
+                height: 54%;
+                border: 1px solid transparent;
+                margin-top: 9.1%;
+                margin-left: 4%;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            .services{
+                width: 100%;
+                height: 550px;
+              
+
+            }
+            .shead{
+                height: 90px;
+           
+                margin-top: 8%;
+                text-align: center;
+            }
+            .maincart{
+                height: 423px;
+             
+                display: flex;
+            }
+            .cart1{
+                width: 25%;
+           
+                margin-left: 5%;
+                text-align: center;
+                align-items: center;
+
+            }
+            .cart1img{
+                height: 63%;
+               
+            }
+            .cart1over{
+                width: 99%;
+                height: 99%;
+                border: 10px solid transparent;
+                background-color:rgb(250,250,250);
+                border-radius: 50%;
+            }
+            .cart1image{
+                width: 85%;
+                height: 85%;
+               border: 1px solid transparent;
+                margin: 7% auto;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .servicesbuttom{
+                background-color: red ;
+            }
+            .servicesbuttom:hover{
+                background-color: rgb(100,175,50);
+            }
+            .cart2{
+                width: 25%;
+              
+                margin-left: 7%;
+                text-align: center;
+                align-items: center;
+
+            }
+            .cart3{
+                width: 25%;
+             
+                margin-left: 7%;
+                text-align: center;
+                align-items: center;
+
+            }
+
+            .cart1over:hover{
+                background-color: white;
+                border: 10px solid rgb(250,250,250);
+            }
+            .howitwork{
+                width: 100%;
+                height: 350px;
+                background-color: rgb(243,245,237);
+                border: 1px solid transparent
+               
+            }
+            .headwork{
+                color: #0bab64 ;
+                width: 13%;
+                font-size: large;
+                margin-top: 10%;
+                margin-left: 44%;
+              
+            }
+            .iconworks{
+                width: 100%;
+                height: 200px;
+                margin-top: 2%;
+               
+                display: flex;
+            }
+           .iconc1{
+               width: 20%;
+            
+               text-align: center;
+               margin-left: 1%;
+           }
+           .iconimg1{
+               width: 50%;
+               height: 50%;
+              
+               margin-top: 7%;
+               margin-left: 24%;
+               border-radius: 50%;
+               overflow: hidden;
+           }
+           .iconc2{
+               width: 20%;
+             
+               text-align: center;
+               margin-left: 1%;
+           }
+           .iconc3{
+               width: 20%;
+              
+               text-align: center;
+               margin-left: 1%;
+           }
+           .iconc4{
+               width: 20%;
+            
+               text-align: center;
+               margin-left: 1%;
+           }
+           .bordericon{
+               width: 5%;
+               height: 2px;
+               background-color: rgb(200,200,170);
+               margin-top: 6%;
+               margin-left: 1%;
+           }
+        .numberscrol{
+            width: 100%;
+            height: 190px;
+            border: 1px solid transparent;
+            background-color: rgb(41,45,53);
+        }
+        .numbermidscrol{
+            width: 85%;
+            height: 60%;
+          
+            margin-top: 4%;
+            margin-left: 7%;
+            display: flex;
+        }
+        .numberc1
+        {
+            width: 19.5%;
+            text-align: center;
+           
+        }
+        .border3{
+            width: 7%;
+            height: 4px;
+            background-color: rgb(55,59,66);
+            border: 1px solid rgb(55,59,66) ;
+            margin-top: 5.5%;
+            margin-left: 1%;
+            margin-right: 1.2%;
+        }
+        .numberc2
+        {
+            width: 19.5%;
+            text-align: center;
+           
+        }
+        .numberc3
+        {
+            width: 19.5%;
+            text-align: center;
+           
+        }
+        .numberc4
+        {
+            width: 19.5%;
+            text-align: center;
+           
+        }
+        .slidemobilemain{
+            width: 100%;
+            height: 630px;
+            border: 1px solid transparent;
+            display: flex;
+        }
+        .staticpage{
+            width: 35%;
+            height: 75%;
+            margin-top: 11%;
+            margin-left: 7%;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .movingslidemain{
+            width: 55%;
+            height: 85%;
+            margin-left: 2%;
+            margin-top: 4%;
+            border: 1px solid transparent;
+        }
+        /* .movingslidetext{
+            width: 100%;
+            height: 10%;
+            border: 1px solid black;
+        } */
+        .movingslideimg{
+            width: 60%;
+            height: 100%;
+            border: 1px solid transparent;
+          
+            margin-left: 20%;
+        }
+        .googlebar{
+            width: 27%;
+            height: 60px;
+            margin-left: 35%;
+            margin-top: 0%;
+            border: 1px solid transparent;
+            overflow: hidden;
+        }
+        .lasticonpage{
+            width: 80%;
+            height: 100px;
+            border: 1px solid transparent;
+            margin-left: 10%;
+            margin-top: 6%;
+            overflow: hidden;
+        }
+      
+           
+
+        </style>
+    </head>
+    <div id="navbar"></div>
+    <body onload="slider()"  >
+        
+      
+        <div class="banner">
+          <div class="slider">
+              <img src="https://i.pinimg.com/originals/7a/16/5a/7a165a19e691f34a2c2a795cfb850bf9.png" id="slideimg"/>
+          </div>
+          
+          <div class="overlay">
+           
+          </div>
+        </div>
+     <div class="iconsection">
+         <div class="firstrow">
+             <div class="fc1">
+              <div class="imga"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="40" height="40"
+viewBox="0 0 30 30"
+style=" fill:white;">    <path d="M15.707,17.707C15.512,17.902,15.256,18,15,18s-0.512-0.098-0.707-0.293l-5-5c-0.391-0.391-0.391-1.023,0-1.414 s1.023-0.391,1.414,0L15,15.586l9.866-9.866C23.702,4.655,22.157,4,20.455,4C17,4,15,7,15,7s-2-3-5.455-3C5.93,4,3,6.93,3,10.545 c0,6.341,7.421,12.406,10.796,15.052l0.004-0.006C14.135,25.844,14.548,26,15,26s0.865-0.156,1.2-0.409l0.004,0.006 C19.579,22.951,27,16.886,27,10.545c0-1.187-0.321-2.297-0.873-3.257L15.707,17.707z"></path></svg></div>
+                 <p>overall Health Focus</p>
+             </div>
+             <div class="borderr1"></div>
+             <div class="fc2">
+                <div class="imga"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="40" height="40"
+                    viewBox="0 0 172 172"
+                    style=" fill:white;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86.0112,0.0112c-9.46,0 -17.2,7.74 -17.2,17.2h-22.93333c-9.46,0 -17.2,7.74 -17.2,17.2v103.2c0,9.40267 7.74,17.2 17.2,17.2h39.90938c-1.77733,-3.612 -3.2147,-7.45333 -4.13203,-11.46667h-35.77735c-3.268,0 -5.73333,-2.52267 -5.73333,-5.73333v-103.2c0,-3.268 2.46533,-5.73333 5.73333,-5.73333h22.93333v5.73333c0,3.15333 2.58,5.73333 5.73333,5.73333h22.93333c3.15333,0 5.73333,-2.58 5.73333,-5.73333v-5.73333h22.93333c3.21067,0 5.73333,2.46533 5.73333,5.73333v45.79948h0.05599c3.89867,0 7.74134,0.46136 11.41067,1.32136v-47.12083c0,-9.46 -7.79733,-17.2 -17.2,-17.2h-22.93333c0,-9.46 -7.79733,-17.2 -17.2,-17.2zM86.0112,11.47786c3.21067,0 5.73333,2.46533 5.73333,5.73333c0,3.21067 -2.52267,5.73333 -5.73333,5.73333c-3.268,0 -5.73333,-2.52267 -5.73333,-5.73333c0,-3.268 2.46533,-5.73333 5.73333,-5.73333zM131.87786,91.74453c-1.548,0 -2.92086,0.62664 -3.95286,1.6013c-1.08933,1.032 -1.78047,2.46936 -1.78047,4.13203v5.73333c-0.05733,3.15333 2.52401,5.73199 5.67735,5.78933c2.752,0 5.16134,-1.95247 5.67734,-4.64714c13.072,2.63733 23.04531,13.59248 23.04531,27.52448c0,15.88133 -12.78533,28.66667 -28.66667,28.66667c-15.93867,0 -28.66667,-12.78533 -28.66667,-28.66667c0,-7.96933 3.21604,-15.08449 8.37604,-20.30182c2.29333,-2.17867 2.34663,-5.79157 0.16797,-8.0849c-1.14667,-1.204 -2.64137,-1.78047 -4.13204,-1.78047c-1.43333,0 -2.86353,0.52317 -3.95286,1.6125l-0.16797,0.16797c-7.28133,7.28133 -11.75781,17.32139 -11.75781,28.38672c0,22.07333 18.00267,40.13333 40.13333,40.13333c22.07333,0 40.13333,-18.06 40.13333,-40.13333c0,-22.13067 -18.06,-40.13333 -40.13333,-40.13333zM123.16589,117.47734c-3.15333,-0.05733 -5.73333,2.52401 -5.73333,5.67735c0,1.60533 0.6338,3.10003 1.78047,4.13203l8.6,8.65599c2.17867,2.236 5.84755,2.34798 8.14089,0.11198c2.236,-2.17867 2.34798,-5.79157 0.11198,-8.0849c-0.05733,-0.05733 -0.05464,-0.11063 -0.11198,-0.16796l-8.66719,-8.6c-1.08933,-1.14667 -2.5155,-1.78182 -4.12083,-1.72448z"></path></g></g></svg></div>
+                <p>Custamised Diet plans</p>
+             </div>
+             <div class="borderr1"></div>
+             <div class="fc3">
+                <div class="imga">  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="40" height="40"
+                    viewBox="0 0 172 172"
+                    style=" fill:white;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M82.56,0v36.765c-8.37156,-5.67062 -18.50344,-9.245 -29.5625,-9.245c-29.32062,0 -52.9975,23.20656 -52.9975,51.9225c0,25.38344 12.45656,48.375 27.09,65.0375c7.32344,8.33125 15.11719,15.11719 22.4675,19.8875c7.35031,4.77031 14.05563,7.6325 19.8875,7.6325c6.14094,0 11.67719,-1.69312 16.555,-4.1925c4.87781,2.49938 10.41406,4.1925 16.555,4.1925c5.57656,0 12.29531,-2.24406 19.6725,-6.3425c7.37719,-4.09844 15.31875,-10.2125 22.6825,-18.06c14.7275,-15.70844 27.09,-38.8075 27.09,-68.155c0,-26.88844 -20.80125,-49.00656 -47.515,-51.7075c7.43094,-10.89781 7.955,-24.08 7.955,-24.08c0.05375,-0.92719 -0.26875,-1.84094 -0.88687,-2.53969c-0.63156,-0.68531 -1.51844,-1.08844 -2.44563,-1.11531c0,0 -19.01406,-0.63156 -31.7125,11.2875c-3.48031,3.26531 -6.00656,6.96063 -7.955,10.6425v-21.93zM124.7,7.4175c-0.69875,4.6225 -2.51281,13.545 -9.03,20.21c-8.815,0.59125 -16.94469,3.53406 -23.9725,7.8475c1.42438,-5.4825 4.32688,-13.50469 10.4275,-19.2425c7.82063,-7.33687 17.71063,-8.46562 22.575,-8.815zM52.9975,34.4c11.86531,0 22.76313,4.47469 30.745,11.5025l2.2575,2.0425l2.2575,-2.0425c7.35031,-6.46344 17.18656,-10.75 27.95,-11.395c0.73906,0.215 1.53188,0.18813 2.2575,-0.1075c0.17469,0 0.36281,0 0.5375,0c25.71938,0 46.1175,20.08906 46.1175,45.0425c0,27.4125 -11.51594,48.87219 -25.2625,63.5325c-6.86656,7.32344 -14.25719,12.92688 -20.9625,16.6625c-6.70531,3.73563 -12.7925,5.4825 -16.34,5.4825c-5.54969,0 -10.46781,-1.47812 -14.835,-3.9775l-1.72,-0.9675l-1.72,0.9675c-4.36719,2.49938 -9.28531,3.9775 -14.835,3.9775c-3.27875,0 -9.39281,-2.19031 -16.125,-6.5575c-6.73219,-4.36719 -14.14969,-10.72312 -21.07,-18.5975c-13.82719,-15.74875 -25.37,-37.39656 -25.37,-60.5225c0,-24.95344 20.39813,-45.0425 46.1175,-45.0425zM72.24,79.0125c-1.6125,0 -3.13094,0.76594 -4.1925,1.8275l-0.215,0.215l-0.1075,0.215c-1.81406,2.53969 -5.805,8.11625 -5.805,15.05c0,6.75906 3.70875,12.05344 6.1275,14.9425c0.06719,0.08063 0.14781,0.24188 0.215,0.3225l0.1075,-0.1075c0.9675,1.20938 2.37844,2.15 3.87,2.15c1.6125,0 3.13094,-0.76594 4.1925,-1.8275l0.215,-0.215l0.1075,-0.215c1.81406,-2.53969 5.805,-8.11625 5.805,-15.05c0,-6.75906 -3.70875,-12.05344 -6.1275,-14.9425c-0.06719,-0.08062 -0.14781,-0.24187 -0.215,-0.3225l-0.1075,0.1075c-0.9675,-1.20937 -2.37844,-2.15 -3.87,-2.15zM103.2,79.0125c-1.6125,0 -3.13094,0.76594 -4.1925,1.8275l-0.215,0.215l-0.1075,0.215c-1.81406,2.53969 -5.805,8.11625 -5.805,15.05c0,6.75906 3.70875,12.05344 6.1275,14.9425c0.06719,0.08063 0.14781,0.24188 0.215,0.3225l0.1075,-0.1075c0.9675,1.20938 2.37844,2.15 3.87,2.15c1.6125,0 3.13094,-0.76594 4.1925,-1.8275l0.215,-0.215l0.1075,-0.215c1.81406,-2.53969 5.805,-8.11625 5.805,-15.05c0,-6.75906 -3.70875,-12.05344 -6.1275,-14.9425c-0.06719,-0.08062 -0.14781,-0.24187 -0.215,-0.3225l-0.1075,0.1075c-0.9675,-1.20937 -2.37844,-2.15 -3.87,-2.15zM72.1325,87.1825c1.65281,2.365 3.5475,5.81844 3.5475,9.1375c0,3.25188 -1.76031,6.62469 -3.3325,9.1375c-1.65281,-2.365 -3.5475,-5.81844 -3.5475,-9.1375c0,-3.25187 1.76031,-6.62469 3.3325,-9.1375zM103.0925,87.1825c1.65281,2.365 3.5475,5.81844 3.5475,9.1375c0,3.25188 -1.76031,6.62469 -3.3325,9.1375c-1.65281,-2.365 -3.5475,-5.81844 -3.5475,-9.1375c0,-3.25187 1.76031,-6.62469 3.3325,-9.1375z"></path></g></g></svg></div>
+                <p>Easy Healthy Recipes</p>
+             </div>
+         </div>
+         <div class="secondrow">
+            <div class="fc1">
+                <div class="imga"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="40" height="40"
+                    viewBox="0 0 172 172"
+                    style=" fill:white;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M125.26438,13.76c-1.76031,0 -3.52063,0.67188 -4.86438,2.01563l-5.84531,5.83187l35.83781,35.83781l5.83188,-5.84531c1.30344,-1.30344 2.01562,-3.02344 2.01562,-4.86437c0,-1.84094 -0.71219,-3.56094 -2.01562,-4.86438l-26.09563,-26.09562c-1.34375,-1.34375 -3.10406,-2.01563 -4.86437,-2.01563zM147.32875,13.8675c-2.67406,-0.01344 -5.34812,0.9675 -7.29656,2.91594l-0.13437,0.13438l15.18437,15.18437l0.13438,-0.13437c4.03125,-4.01781 4.01781,-10.57531 0,-14.60656l-0.59125,-0.57781c-1.94844,-1.94844 -4.60906,-2.91594 -7.29656,-2.91594zM98.21469,17.07906c-1.76031,0 -3.52062,0.67187 -4.86437,2.01562l-3.73563,3.72219c-2.6875,2.6875 -2.6875,7.05469 0,9.74219l49.75906,49.74562c1.29,1.30344 3.02344,2.01563 4.85094,2.01563c1.84094,0 3.57438,-0.71219 4.87781,-2.01563l3.72219,-3.72219c1.30344,-1.30344 2.02906,-3.03687 2.02906,-4.87781c0,-1.8275 -0.72562,-3.56094 -2.02906,-4.85094l-6.50375,-6.51719l-43.24187,-43.24188c-1.34375,-1.34375 -3.10406,-2.01562 -4.86438,-2.01562zM104.20781,56.04781l-48.16,48.16l11.74437,11.74437l48.16,-48.16zM27.76188,87.74688c-1.77375,0 -3.56094,0.645 -4.86438,1.94844l-3.73562,3.72219c-1.29,1.30344 -2.01563,3.03688 -2.01563,4.87781c0,1.8275 0.72563,3.56094 2.01563,4.85094l42.75812,42.75813l0.16125,0.17469l2.09625,2.08281l4.74344,4.74344c1.34375,1.34375 3.10406,2.01562 4.86438,2.01562c1.76031,0 3.52062,-0.67187 4.86437,-2.01562l3.73563,-3.73563c2.6875,-2.67406 2.6875,-7.04125 0,-9.72875l-49.75906,-49.74562c-1.29,-1.30344 -3.07719,-1.94844 -4.86437,-1.94844zM21.6075,114.55469l-5.83187,5.84531c-1.30344,1.30344 -2.01563,3.02344 -2.01563,4.86438c0,1.84094 0.71219,3.56094 2.01563,4.86437l26.09562,26.09563c1.34375,1.34375 3.10406,2.01562 4.86438,2.01562c1.76031,0 3.52062,-0.67187 4.86437,-2.01562l5.84531,-5.83188zM16.91781,139.89781l-0.13438,0.13437c-4.03125,4.01781 -4.01781,10.57531 0.01344,14.60656l0.57781,0.57781c1.94844,1.94844 4.54188,3.02344 7.29656,3.02344c2.75469,0 5.34813,-1.075 7.29656,-3.02344l0.13437,-0.13438z"></path></g></g></svg></div>
+                   <p>workout Plans</p>
+               </div>
+               <div class="borderr1"></div>
+               <div class="fc2">
+                  <div class="imga"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="40" height="40"
+                    viewBox="0 0 172 172"
+                    style=" fill:white;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M34.59036,5.73333c-0.74426,0.02741 -1.49909,0.20353 -2.21719,0.5375c-2.8724,1.3416 -4.10749,4.75911 -2.76589,7.62578c4.80453,10.27987 10.52604,26.15645 10.52604,43.43672c0,2.82653 -0.4059,6.83933 -1.24297,12.20573c-1.7372,10.5436 -6.03182,19.98479 -12.40729,27.30052c-5.87093,6.67933 -10.61132,13.98844 -14.37812,21.29844c-0.0172,0.0344 -0.03879,0.06638 -0.05599,0.10078c-8.57133,16.66107 -12.04896,33.28746 -12.04896,42.29453c0,3.17053 2.5628,5.73333 5.73333,5.73333c3.17053,0 5.73333,-2.5628 5.73333,-5.73333c0,-7.64253 2.92257,-20.55919 9.1375,-33.70573c40.96467,3.7324 57.6544,22.91828 59.48333,40.04375c0.3096,2.94693 2.79321,5.12864 5.68854,5.12864c0.04013,0 0.08304,-0.0112 0.12317,-0.0112c0.07453,0 0.14396,0.0112 0.21276,0.0112c0.04587,0 0.08851,-0.02786 0.13438,-0.03359c0.04587,-0.00573 0.08851,0.00573 0.13437,0c0.05733,-0.00573 0.09944,-0.03906 0.15677,-0.04479c2.81507,-0.21787 5.11915,-2.42367 5.28542,-5.31901c0.946,-16.33427 8.37828,-38.06664 60.12161,-40.24532c5.72187,13.32427 8.5888,27.14124 8.5888,34.17604c0,3.17053 2.5628,5.73333 5.73333,5.73333c3.17053,0 5.73333,-2.5628 5.73333,-5.73333c0,-11.89667 -7.30337,-43.59949 -24.16511,-62.93229c-8.59427,-9.90721 -13.71037,-20.46764 -15.20677,-31.30938c-0.51599,-3.98467 -0.76146,-6.82553 -0.76146,-8.95833c0,-17.28027 5.72151,-33.15685 10.52604,-43.43672c1.33587,-2.86667 0.10651,-6.28418 -2.76589,-7.62578c-2.86093,-1.3244 -6.28419,-0.10651 -7.62578,2.76589c-5.2976,11.3348 -11.60104,28.91221 -11.60104,48.29661c0,2.67173 0.26051,5.88312 0.85104,10.48125c0.85999,6.2092 2.69646,12.27435 5.41979,18.18542h-80.6362c1.8404,-4.644 3.33402,-9.50954 4.17682,-14.65808c0.95173,-6.08307 1.38854,-10.53419 1.38854,-14.00859c0,-19.3844 -6.31491,-36.96181 -11.60104,-48.29661c-1.0105,-2.1543 -3.17582,-3.38562 -5.40859,-3.30339zM86,5.73333c-3.17053,0 -5.73333,2.5628 -5.73333,5.73333v5.73333c0,3.17053 2.5628,5.73333 5.73333,5.73333c3.17053,0 5.73333,-2.5628 5.73333,-5.73333v-5.73333c0,-3.17053 -2.5628,-5.73333 -5.73333,-5.73333zM86,34.4c-3.17053,0 -5.73333,2.5628 -5.73333,5.73333v5.73333c0,3.17053 2.5628,5.73333 5.73333,5.73333c3.17053,0 5.73333,-2.5628 5.73333,-5.73333v-5.73333c0,-3.17053 -2.5628,-5.73333 -5.73333,-5.73333zM86,63.06667c-3.17053,0 -5.73333,2.5628 -5.73333,5.73333v5.73333c0,3.17053 2.5628,5.73333 5.73333,5.73333c3.17053,0 5.73333,-2.5628 5.73333,-5.73333v-5.73333c0,-3.17053 -2.5628,-5.73333 -5.73333,-5.73333zM133.08724,97.22031c1.8404,2.67747 3.84993,5.32546 6.09167,7.91693c2.6144,2.99853 4.98907,6.38774 7.12187,9.99974c-32.766,2.2532 -53.03736,12.71358 -61.46536,31.65651c-8.9268,-14.39067 -27.14491,-26.99666 -58.15078,-30.88386c2.5112,-3.9904 5.23883,-7.90493 8.42083,-11.52266c1.88627,-2.16147 3.60797,-4.48364 5.18464,-6.92031h91.57656c0.43573,0 0.81351,-0.15462 1.22058,-0.24636z"></path></g></g></svg></div>
+                  <p>Body Transformation</p>
+               </div>
+               <div class="borderr1"></div>
+               <div class="fc3">
+                  <div class="imga">  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="40" height="40"
+                    viewBox="0 0 172 172"
+                    style=" fill:white;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M40.72906,10.27969c-2.64719,-0.215 -5.59,0.55094 -8.30438,2.45906c-2.39187,1.66625 -7.55187,5.76469 -12.37594,10.40063c-2.40531,2.31125 -4.70312,4.71656 -6.47687,7.08156c-1.78719,2.365 -3.34594,4.52844 -3.25188,7.67281c0.09406,2.82188 0.37625,11.16656 6.38281,23.95906c6.00656,12.77906 17.65687,30.315 40.37969,53.05125c22.73625,22.73625 40.27219,34.38656 53.05125,40.39312c12.77906,6.00656 21.13719,6.28875 23.95906,6.38281c3.13094,0.09406 5.29437,-1.46469 7.65937,-3.25187c2.365,-1.78719 4.77031,-4.07156 7.08156,-6.47688c4.6225,-4.82406 8.72094,-9.98406 10.38719,-12.37594c3.80281,-5.41531 3.17125,-11.81156 -1.06156,-14.78125c-2.66063,-1.86781 -27.13031,-18.15406 -30.81219,-20.41156c-3.73562,-2.28437 -8.03562,-1.24969 -11.87875,0.77938c-3.02344,1.59906 -11.20687,6.28875 -13.545,7.6325c-1.76031,-1.11531 -8.43875,-5.56313 -22.80344,-19.92781c-14.37812,-14.36469 -18.8125,-21.04313 -19.92781,-22.80344c1.34375,-2.33813 6.02,-10.48125 7.6325,-13.55844c2.01563,-3.82969 3.14438,-8.17 0.73906,-11.9325c-1.00781,-1.59906 -5.59,-8.57312 -10.2125,-15.57406c-4.63594,-7.00094 -9.03,-13.63906 -10.17219,-15.22469v-0.01344c-1.49156,-2.05594 -3.81625,-3.26531 -6.45,-3.48031zM86,17.2v6.88c34.14469,0 61.92,27.77531 61.92,61.92h6.88c0,-37.93406 -30.86594,-68.8 -68.8,-68.8zM40.0975,17.3075c0.94063,0.12094 1.505,0.49719 1.505,0.49719c0.55094,0.76594 5.375,7.99531 9.9975,14.98281c4.6225,7.00094 9.33906,14.17656 10.15875,15.48c0.13438,0.20156 0.3225,2.48594 -1.02125,5.02563v0.01344c-1.51844,2.88906 -8.6,15.265 -8.6,15.265l-0.98094,1.73344l1.00781,1.72c0,0 5.28094,8.90906 22.07781,25.70594c16.81031,16.79688 25.71938,22.09125 25.71938,22.09125l1.72,1.00781l1.73344,-0.98094c0,0 12.34906,-7.06813 15.265,-8.6c2.53969,-1.33031 4.82406,-1.15563 5.09281,-0.99438c2.37844,1.46469 28.81,19.0275 30.43594,20.16969c0.05375,0.04031 1.49156,2.21719 -0.60469,5.20031h-0.01344c-1.26313,1.81406 -5.40188,7.06813 -9.71531,11.55625c-2.16344,2.24406 -4.38063,4.34031 -6.26188,5.75125c-1.88125,1.41094 -3.56094,1.85438 -3.29219,1.86781c-2.92937,-0.09406 -9.39281,-0.16125 -21.25812,-5.73781c-11.86531,-5.56312 -28.79656,-16.70281 -51.11625,-39.03594c-22.30625,-22.30625 -33.44594,-39.2375 -39.0225,-51.11625c-5.56313,-11.86531 -5.63031,-18.32875 -5.72438,-21.24469c0.01344,0.26875 0.45688,-1.42438 1.86781,-3.30563c1.41094,-1.88125 3.49375,-4.11187 5.73781,-6.27531c4.50156,-4.31344 9.74219,-8.45219 11.55625,-9.71531v0.01344c1.49156,-1.04812 2.795,-1.1825 3.73562,-1.075zM86,36.26781v6.88c23.63656,0 42.85219,19.22906 42.85219,42.85219h6.88c0,-27.42594 -22.30625,-49.73219 -49.73219,-49.73219zM86,55.04v6.88c13.27625,0 24.08,10.80375 24.08,24.08h6.88c0,-17.07906 -13.89437,-30.96 -30.96,-30.96z"></path></g></g></svg></div>
+                  <p>Weekly Consultations</p>
+               </div>
+           </div>
+         </div>
+     </div>
+     <div class="appointment">
+         <div class="textcol">
+            <h1>Book an appointment with your <span style="color:  rgb(100,170,50);">personal nutritionist</span> </h1>
+            <h6 style="margin-top: 4%; font-weight: 450;"> Book a Consultations seassion on the app with one of our nutritionist to discuss your health
+              concern and goals.
+            </h6>
+            <div class="time">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g transform="translate(25.8,25.8) scale(0.7,0.7)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#8ec038"><path d="M86,17.2c-37.92867,0 -68.8,30.87133 -68.8,68.8c0,37.92867 30.87133,68.8 68.8,68.8c37.92867,0 68.8,-30.87133 68.8,-68.8c0,-23.73438 -12.05195,-44.71912 -30.39114,-57.08698l6.57317,-8.43203l-27.78203,-1.00781l8.01771,26.39349l6.09167,-7.82734c14.14118,9.24449 23.956,24.50679 25.71041,42.23854c-3.03904,0.16645 -5.4184,2.67854 -5.41979,5.72214c0.00232,3.05592 2.40111,5.57292 5.45339,5.72214c-2.67683,27.14387 -24.18738,48.65442 -51.33125,51.33125c-0.14921,-3.05228 -2.66621,-5.45106 -5.72214,-5.45339c-3.05592,0.00232 -5.57292,2.40111 -5.72214,5.45339c-27.14387,-2.67683 -48.65442,-24.18738 -51.33125,-51.33125c3.05228,-0.14921 5.45106,-2.66621 5.45339,-5.72214c-0.00232,-3.05592 -2.40111,-5.57292 -5.45339,-5.72214c2.86262,-29.02787 27.256,-51.6112 57.05339,-51.6112c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843zM85.91042,45.78828c-3.16203,0.04943 -5.68705,2.6496 -5.64375,5.81172v31.53333l-20.63776,15.47552c-2.53562,1.89862 -3.05201,5.49328 -1.15339,8.0289c1.89862,2.53562 5.49328,3.05201 8.0289,1.15339l22.93333,-17.2c1.44572,-1.0833 2.29637,-2.78459 2.29558,-4.59114v-34.4c0.02122,-1.54972 -0.58581,-3.04203 -1.68279,-4.1369c-1.09698,-1.09487 -2.59045,-1.69903 -4.14013,-1.67482z"></path></g></g></g></svg>
+                <h5 style="margin-top: 4.5%; margin-left: 1%;">Every day from 12:00 PM to 10:00 PM</h5>
+            </div>
+            <div class="number">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="33" height="33"
+                viewBox="0 0 172 172"
+                style=" fill:#8ec038;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#8ec038"><path d="M40.72906,10.27969c-2.64719,-0.215 -5.59,0.55094 -8.30438,2.45906c-2.39187,1.66625 -7.55187,5.76469 -12.37594,10.40063c-2.40531,2.31125 -4.70312,4.71656 -6.47687,7.08156c-1.78719,2.365 -3.34594,4.52844 -3.25188,7.67281c0.09406,2.82188 0.37625,11.16656 6.38281,23.95906c6.00656,12.77906 17.65687,30.315 40.37969,53.05125c22.73625,22.73625 40.27219,34.38656 53.05125,40.39312c12.77906,6.00656 21.13719,6.28875 23.95906,6.38281c3.13094,0.09406 5.29437,-1.46469 7.65937,-3.25187c2.365,-1.78719 4.77031,-4.07156 7.08156,-6.47688c4.6225,-4.82406 8.72094,-9.98406 10.38719,-12.37594c3.80281,-5.41531 3.17125,-11.81156 -1.06156,-14.78125c-2.66063,-1.86781 -27.13031,-18.15406 -30.81219,-20.41156c-3.73562,-2.28437 -8.03562,-1.24969 -11.87875,0.77938c-3.02344,1.59906 -11.20687,6.28875 -13.545,7.6325c-1.76031,-1.11531 -8.43875,-5.56313 -22.80344,-19.92781c-14.37812,-14.36469 -18.8125,-21.04313 -19.92781,-22.80344c1.34375,-2.33813 6.02,-10.48125 7.6325,-13.55844c2.01563,-3.82969 3.14438,-8.17 0.73906,-11.9325c-1.00781,-1.59906 -5.59,-8.57312 -10.2125,-15.57406c-4.63594,-7.00094 -9.03,-13.63906 -10.17219,-15.22469v-0.01344c-1.49156,-2.05594 -3.81625,-3.26531 -6.45,-3.48031zM86,17.2v6.88c34.14469,0 61.92,27.77531 61.92,61.92h6.88c0,-37.93406 -30.86594,-68.8 -68.8,-68.8zM40.0975,17.3075c0.94063,0.12094 1.505,0.49719 1.505,0.49719c0.55094,0.76594 5.375,7.99531 9.9975,14.98281c4.6225,7.00094 9.33906,14.17656 10.15875,15.48c0.13438,0.20156 0.3225,2.48594 -1.02125,5.02563v0.01344c-1.51844,2.88906 -8.6,15.265 -8.6,15.265l-0.98094,1.73344l1.00781,1.72c0,0 5.28094,8.90906 22.07781,25.70594c16.81031,16.79688 25.71938,22.09125 25.71938,22.09125l1.72,1.00781l1.73344,-0.98094c0,0 12.34906,-7.06813 15.265,-8.6c2.53969,-1.33031 4.82406,-1.15563 5.09281,-0.99438c2.37844,1.46469 28.81,19.0275 30.43594,20.16969c0.05375,0.04031 1.49156,2.21719 -0.60469,5.20031h-0.01344c-1.26313,1.81406 -5.40188,7.06813 -9.71531,11.55625c-2.16344,2.24406 -4.38063,4.34031 -6.26188,5.75125c-1.88125,1.41094 -3.56094,1.85438 -3.29219,1.86781c-2.92937,-0.09406 -9.39281,-0.16125 -21.25812,-5.73781c-11.86531,-5.56312 -28.79656,-16.70281 -51.11625,-39.03594c-22.30625,-22.30625 -33.44594,-39.2375 -39.0225,-51.11625c-5.56313,-11.86531 -5.63031,-18.32875 -5.72438,-21.24469c0.01344,0.26875 0.45688,-1.42438 1.86781,-3.30563c1.41094,-1.88125 3.49375,-4.11187 5.73781,-6.27531c4.50156,-4.31344 9.74219,-8.45219 11.55625,-9.71531v0.01344c1.49156,-1.04812 2.795,-1.1825 3.73562,-1.075zM86,36.26781v6.88c23.63656,0 42.85219,19.22906 42.85219,42.85219h6.88c0,-27.42594 -22.30625,-49.73219 -49.73219,-49.73219zM86,55.04v6.88c13.27625,0 24.08,10.80375 24.08,24.08h6.88c0,-17.07906 -13.89437,-30.96 -30.96,-30.96z"></path></g></g></svg>
+                <h5 style="margin-top: 1.5%; margin-left: 3%;">+919100347489</h5>
+            </div>
+         </div>
+         <div class="imgcol">
+             <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/businesswoman-2817567_640.jpg" alt="">
+         </div>
+     </div>
+     <div class="services">
+         <div class="shead">
+             <h3 style="margin-top: 1%;">our services</h3>
+             <h1 style=" margin-top: -0.5%; font-weight: 800;">Lets change your life</h1>
+            
+         </div>
+         <div class="maincart">
+            <div class="cart1">
+                <div class="cart1img">
+                    <div class="cart1over">
+                        <div class="cart1image">
+                            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/food-2569257_640-275x275.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <h4 style="margin-top: 7%;">Nutrition Programs</h4>
+                <h5 style="font-weight: 450; margin-top: 4%" >Diet charts designed to help you reach your goals in a sustainable manner without 
+                    using crash diet approach 
+                </h5>
+               <a href="nutritionprogram.html"><button class="servicesbuttom" style="width: 45%; height: 6.5%;  border: 1px solid transparent; border-radius: 20px; margin-top: 7%;">read more</button></a>
+            </div>
+            <div class="cart2">
+                <div class="cart1img">
+                    <div class="cart1over">
+                        <div class="cart1image">
+                            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/adult-1850925_640-1.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <h4 style="margin-top: 7%;">workout Programs</h4>
+                <h5 style="font-weight: 450; margin-top: 4%" > Easy workout routines designed accoeding to your fitness levels with constant motivation
+                    to push yourself.
+                </h5>
+               <a href="workoutprogram.html"><button class="servicesbuttom" style="width: 45%; height: 6.5%;  border: 1px solid transparent; border-radius: 20px; margin-top: 7%;">read more</button></a>
+            </div>
+            <div class="cart3">
+                <div class="cart1img">
+                    <div class="cart1over">
+                        <div class="cart1image">
+                            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/doctor-5710152_640.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <h4 style="margin-top: 7%;">Health Counselling</h4>
+                <h5 style="font-weight: 450; margin-top: 4%" > 30 minute Consultations with any or our nutritionist every week to discuss your progress and problems
+                </h5>
+               <a href="healthcounseling.html"><button class="servicesbuttom" style="width: 45%; height: 6.5%;  border: 1px solid transparent; border-radius: 20px; margin-top: 7%;">read more</button></a>
+            </div>
+         </div>
+
+     </div>
+     <div class="howitwork">
+         <div class="headwork">
+             <h4 style="font-weight: 400;" >How it works</h4>
+         </div>
+         <div class="iconworks">
+             <div class="iconc1">
+                 <div class="iconimg1">
+                     <img src="https://as1.ftcdn.net/v2/jpg/01/21/78/86/1000_F_121788670_iNFm5FE6gQFiKKObQAb0t2itat1l03DZ.jpg" alt="">
+                 </div>
+                 <h5 style="margin-top: 6%;">Download the app</h5>
+                 <h6 style="margin-top: 4%;">Click on the link and get on board our fitmeals app</h6>
+             </div>
+             <div class="bordericon"></div>
+             <div class="iconc2">
+                <div class="iconimg1">
+                    <img src="https://st3.depositphotos.com/1432405/16707/v/450/depositphotos_167078260-stock-illustration-user-icon-green.jpg" alt="">
+                </div>
+                <h5 style="margin-top: 6%;">Book an appointment</h5>
+                <h6 style="margin-top: 4%;">our nutritionist will help find the right plan for you</h6>
+            </div>
+            <div class="bordericon"></div>
+             
+             <div class="iconc3">
+                <div class="iconimg1">
+                    <img src="data:image/png;base64,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" alt="">
+                </div>
+                <h5 style="margin-top: 6%;">Place an order</h5>
+                <h6 style="margin-top: 4%;">Choos the plan the fit you well an place an order</h6>
+                
+             </div>
+             <div class="bordericon"></div>
+             <div class="iconc4">
+                <div class="iconimg1">
+                    <img src="data:image/png;base64,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" alt="">
+                </div>
+                <h5 style="margin-top: 6%;">Get started!</h5>
+                <h6 style="margin-top: 4%;">Follow the diet and workout plans sent to you and begin your journey </h6>
+               
+             </div>
+         </div>
+     </div>
+        <div class="numberscrol">
+            <div class="numbermidscrol" >
+                <div class="numberc1" >
+                    <p class="counter" data-target="127" style="font-size: 50px; margin-top: 8%; color: rgb(100,170,50); font-weight: 580;">0</p>
+                    <h5 style="color: white; margin-top: 2%; ">Happy customers</h5>
+                </div>
+                <div class="border3">
+                    
+                </div>
+                <div class="numberc2">
+                    <p class="counter" data-target="24" style="font-size: 50px; margin-top: 8%;  color:  rgb(100,170,50);  font-weight: 580;">0</p>
+                    <h5 style="color: white; margin-top: 2%; ">Nutrition Programs</h5>
+                </div>
+                <div class="border3"></div>
+                <div class="numberc3">
+                    <p class="counter" data-target="15" style="font-size: 50px; margin-top: 8%;  color: rgb(100,170,50);  font-weight: 580;">0</p>
+                    <h5 style="color: white; margin-top: 2%; ">Coaching Certificates</h5>
+                </div>
+                <div class="border3"></div>
+                <div class="numberc4">
+                    <p class="counter" data-target="520" style="font-size: 50px; margin-top: 8%;  color:  rgb(100,170,50);  font-weight: 580;">0</p>
+                    <h5 style="color: white; margin-top: 2%; ">Workout seassion</h5>
+                </div>
+            </div>
+        </div>
+        <div class="slidemobilemain">
+            <div class="staticpage">
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/PHOTO-2021-07-13-17-18-45-724x1024.jpg" alt="">
+            </div>
+            <div class="movingslidemain">
+               
+                <div class="movingslideimg">
+                    <img id="mobileslide" src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/appstore-asset-2-576x1024.jpg" alt="">
+                </div>
+                <button onclick="left1()" style="margin-top: -45%; margin-left: 2%;  background-color: transparent; border: none;">&#x3c</button>
+                <button onclick="right1()" style="margin-left: 95%; margin-top: -45.5%; background-color: transparent; border: none;">&#x3e</button>
+            </div>
+        </div>
+        <div class="googlebar">
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/ICON-3-300x62.png" alt="">
+        </div>
+        <div class="lasticonpage">
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/ICON-7-1024x184.png" alt="">
+        </div>
+        <div id="foot"></div>
+       
+        <script>
+            var i;
+             var slideimg = document.getElementById("slideimg")
+             var overlay = document.querySelector(".overlay")
+            var images = ["https://www.fitmeals.co.in//wp-content//uploads//2021//09//Creative-1-1920x1280px.jpg" ,"https://www.fitmeals.co.in/wp-content/uploads/2021/09/businesswoman-2817567_640.jpg","https://cdn.pixabay.com/photo/2017/01/14/10/57/woman-1979272__480.jpg","https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825_960_720.jpg"]
+             var len = images.length;
+             var i = 0
+             var j = 0 
+             var mobileimg = document.getElementById("mobileslide")
+             var mobilimg = ["https://www.fitmeals.co.in/wp-content/uploads/2021/09/appstore-asset-2.jpg","https://www.fitmeals.co.in/wp-content/uploads/2021/09/appstore-asset-3.jpg","https://www.fitmeals.co.in/wp-content/uploads/2021/09/appstore-asset-6.jpg" ]
+             function slider()
+             {
+                 if(i > len-1)
+                 {
+                     i = 0 
+                 }
+                 if(j > len-2)
+                 {
+                     j = 0 
+                 }
+                 slideimg.src = images[i]
+                mobileimg.src = mobilimg[j]
+                 j++
+                 var overlay = document.querySelector(".overlay")
+            overlay.innerHTML = bannertext()
+                 i++
+                 setTimeout('slider()',4000);
+           }
+           function left1()
+           {
+               console.log("aa gya")
+               j--
+               if(j<0)
+               {
+                   j = len-2
+               }
+              
+               mobileimg.src = mobilimg[j]
+              
+           }
+           function right1()
+           {
+               console.log("aa gya")
+               j++
+               if(j>len-2)
+               {
+                   j = 0
+               }
+              
+               mobileimg.src = mobilimg[j]
+              
+           }
+
+
+        </script>
+        
+                <script>
+            window.addEventListener("scroll" , function(){
+                var header = document.querySelector(".header")
+                header.classList.toggle("sticky",window.scrollY > 0);
+            })
+            function bannertext()
+            {
+                if(i==0){
+                    return `
+                    <button onclick=right() class="rightbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(90,90,90);">&#x2192</button>
+                    <button onclick=left() class="leftbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(90,90,90);">&#x2190</button>
+                   
+                
+
+              </div>`
+                }
+                else if (i == 1)
+                {
+                    return `
+                    <button onclick=right() class="rightbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(90,90,90);">&#x2192</button>
+                    <button onclick=left() class="leftbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(90,90,90);">&#x2190</button>
+                    <div class="content">
+                        <h1>Your Personal Health Coach</h1>
+                  <h3>A persona nutritionist assigned to design your diet charts</h3>
+
+              </div>`
+                }
+                else if (i == 2)
+                {
+                    return `
+                    <button class="rightbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(90,90,90);" onclick = right()>&#x2192</button>
+                    <button class="leftbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(90,90,90);" onclick=left()>&#x2190</button>
+                    <div class="content">
+                  <h1>Wholesome Healthy Recipes</h1>
+                  <h3>Get access to quick and easy recipes and meal prep ideas</h3>
+
+              </div>`
+                }
+                else if (i == 3)
+                {
+                    return `
+                    <button class="rightbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(110,110,110);" onclick = right()>&#x2192</button>
+                    <button class="leftbuttom" style="width: 7.5%; height: 15.8%; font-size: 20px; color:rgb(110,110,110);" onclick=left()>&#x2190</button>
+                    <div class="content">
+                  <h1>Personalised workout plans</h1>
+                  <h3>workout routines designed according to your experience level.</h3>
+
+              </div>`
+                }
+                
+            }
+             function right()
+            {
+                console.log("aa ")
+                i++
+                if(i>3)
+                {
+                   i = 0
+                }
+                slideimg.src = images[i]
+                overlay.innerHTML = bannertext();
+
+            }
+            function left()
+            {
+                console.log("aa ")
+                i--
+                if(i<0)
+                {
+                   i = 3
+                }
+                slideimg.src = images[i]
+                overlay.innerHTML = bannertext();
+
+            }
+           
+            
+         //   addEventListener('onload',increase())
+         const counters = document.querySelectorAll(".counter")
+         
+         const speed = 100;
+         counters.forEach(counter => {
+             const updatecount = () => {
+                 const target = +counter.getAttribute("data-target");
+                 const count = +counter.innerHTML;
+                 const inc = target / speed ;
+                 if(count < target){
+                     counter.innerHTML =  Math.ceil(count + inc);
+                    // console.log(tem)
+                    
+                     setTimeout(updatecount,50);
+                 }
+                 else
+                 {
+                     count.innerHTML = target;
+                    // console.log(target)
+                 }
+
+             }
+             updatecount();
+             
+         });
+          
+            
+           
+        </script>
+        <div id="foot"></div>
+    </body>
+</html>
+<script type="module">
+   
+    import {navbar2,footeri} from "../header/data.js"
+    let head = document.getElementById("navbar")
+    head.innerHTML = navbar2()
+     let footer1 = document.getElementById("foot")
+     footer1.innerHTML = footeri()
+
+  
+
+</script>

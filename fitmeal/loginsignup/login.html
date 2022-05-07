@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/3075c3c5e4.js" crossorigin="anonymous"></script>
+      
+    <link rel="stylesheet" href="../Styles/logsign.css">
+    <link rel="stylesheet" href="../Styles/top.css">
+
+        <style>
+            .signinsubmit {
+                font-family: "Roboto", sans-serif;
+                outline: 1;
+
+                background-color: black !important;
+                color: white;
+                width: 100%;
+                border: 0;
+                margin: 0 0 15px;
+                padding: 15px;
+                box-sizing: border-box;
+                font-size: 18px;
+                /* border-radius: 5px; */
+                /* box-shadow: 4px 4px 15px brown; */
+            }
+
+            .signinsubmit:hover {
+                background-color: #222222 !important;
+                /* color:red; */
+            }
+
+            li a {
+                text-decoration: underline;
+            }
+      
+    .footer-below{
+     background-color: #292D35;
+     z-index:9999;
+     position:sticky;
+ }
+
+ .footer-background-image{
+     width:100%;
+     background-color: black;
+     height:900px;
+ }
+        </style>
+    </head>
+
+    <body>
+        <div id="head"></div>
+        <div id="login-page">
+            <h1 id="hlogin">Login</h1>
+            <div class="form">
+
+                <form id="login-form">
+                    <input type="email" id="email" placeholder="Email Address" required />
+                    <input type="password" id="password" placeholder="Password" required />
+                    <input class="signinsubmit" type="submit" value="Sign In " />
+                    <!-- <button class="signinsubmit">Sign In</button> -->
+
+                    <ul>
+                        <li><a id="forgot" href="forgot.html">
+                                <pre>Forgot Your Password?  /</pre>
+                            </a></li>
+                        <li><a class="createaccount" href="signup.html">
+                                <pre>Create  Account</pre>
+                            </a></li>
+                    </ul>
+                </form>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="foot"></div>
+    </body>
+
+</html>
+<script type="module">
+   
+    import {navbar,footeri} from "../header/data.js"
+    let head = document.getElementById("head")
+    head.innerHTML = navbar()
+     let footer1 = document.getElementById("foot")
+     footer1.innerHTML = footeri()
+
+  
+</script>
+
+<script>
+    window.addEventListener("scroll" , function(){
+           var header = document.querySelector("#navbar")
+           header.classList.toggle("sticky",window.scrollY > 0);
+
+       })
+</script>
+<script>
+
+
+
+
+    let logininfo = JSON.parse(localStorage.getItem("signupdetails"))
+
+    const login = () => {
+        let email = document.getElementById("email").value
+        let password = document.getElementById("password").value
+        for (i = 0; i < logininfo.length; i++) {
+
+            if (logininfo[i].email == email && logininfo[i].password == password) {
+
+                window.location.href = "../home/index.html"
+                alert("login success")
+                // window.location.href = "../home/index.html"
+            }
+            else {
+                alert("invalid credentials")
+            }
+        }
+    }
+    document.getElementById("login-form").addEventListener("submit", login)
+</script>

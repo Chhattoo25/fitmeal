@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+.meal-plan-container{
+    width: 100%;
+    height: 50vh;
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2021/05/131656388_2928339300783531_1455339526998620196_n.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(50%)
+}
+.meal-plan-text{
+    position: relative;
+    width: 100%;
+    color: rgb(237, 243, 239);
+    font-size: 200%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin-top: -17%;
+    margin-bottom: 10%;
+    padding: 3%;
+}
+
+.meal-plan-page{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-around;
+}
+.basic-plan-pic img{
+  width: 55%;
+  margin-left: 30%;
+}
+.price-section{
+  margin-left: -10%;
+}
+.red-text{
+  color: rgb(218,37,37);
+}
+.price{
+  font-weight: 700;
+}
+.starting{
+  font-weight: 500;
+}
+.cat-bold{
+  font-weight: 400;
+}
+.product-quantity input{
+  width: 60px;
+  height: 6vh;
+  margin-left: 3px;
+}
+.add-to-cart{
+    margin-top: -12%;
+}
+.add-to-cart button:hover{
+background-color: rgb(143,193,56);
+}
+
+.description h3{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 6%;
+  text-decoration: underline;
+  text-decoration-color: rgb(218,37,37);
+  margin: 4%;
+}
+.description ul,.description p{
+  text-align:left;
+  line-height: 200%;
+  margin-left: 20%;
+}
+.note{
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+.here li {
+  list-style-type: none;
+}
+
+.noteul{
+  margin-left: 1.5%;
+}
+
+
+.rate-area {
+  float: left;
+  border-style: none;
+  }
+  
+  .rate-area:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+  }
+  
+  .rate-area:not(:checked) > label {
+  float: right;
+  width: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 180%;
+  color: lightgrey;
+  }
+  
+  .rate-area:not(:checked) > label:before {
+  content: "★";
+  }
+  
+  .rate-area > input:checked ~ label {
+  color: gold;
+  }
+  
+  .rate-area:not(:checked) > label:hover,
+  .rate-area:not(:checked) > label:hover ~ label {
+  color: gold;
+  }
+  
+  .rate-area > input:checked + label:hover,
+  .rate-area > input:checked + label:hover ~ label,
+  .rate-area > input:checked ~ label:hover,
+  .rate-area > input:checked ~ label:hover ~ label,
+  .rate-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  }
+
+
+
+
+.Related-products{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: space-around;
+}
+
+
+
+.week-keto-plan button{
+  padding: 2%;
+  width: 52%;
+  border-radius: 60px;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(218,37,37);
+  transition: 0.5s;
+  font-size: 16px;
+  font-weight: 500;
+}
+.add-to-cart button:hover{
+  background-color: rgb(143,193,56);
+}
+.week-keto-plan img{
+  width:110%;
+  border-radius: 30px;
+  transition: 0.2s;
+  margin-left: -8%;
+}
+.week-keto-plan img:hover{
+  transform: translateY(-5px);
+  transform: translate3d(10px, -15px, 10px);
+}
+
+.week-keto-plan h2{
+  text-align: center;
+  margin-left: -16%;
+  margin-top: 6%;
+}
+
+.week-keto-plan p{
+  text-align: center;
+  margin-left: -6%;
+  margin-top: 4%;
+}
+
+
+.week-keto-plan button{
+  margin-left: 18%;
+  margin-top:10%;
+  padding: 4%;
+}
+.week-keto-plan button:hover{
+background-color: rgb(113, 158, 34);
+}
+
+.week-keto-plan a{
+  text-decoration: none;
+}
+
+
+.Reviews h3{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-decoration: underline;
+  text-decoration-color: rgb(218,37,37);
+}
+.Reviews h2, .Reviews p{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+
+.related{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-decoration: underline;
+  text-decoration-color: rgb(218,37,37);
+}
+
+.reviewform{
+  background-color: rgb(242,245,236);
+  padding: 5%;
+  margin: 10%;
+  border-radius: 30px;
+}
+.textreviewsection textarea{
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  height: 40vh;
+}
+
+.textreviewsection textarea{
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  height: 40vh;
+  padding: 2%;
+  font-size: 16px;
+}
+
+.Name textarea{
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  height: 9vh;
+  padding: 2%;
+  font-size: 18px;
+}
+
+.email textarea{
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  height: 9vh;
+  padding: 2%;
+  font-size: 18px;
+}
+
+.reviewform button{
+  padding: 1%;
+  width: 160%;
+  height: 5vh;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+  border: none;
+  background-color: rgb(113, 158, 34);
+  border-radius: 25px;
+}
+.reviewform button:hover{
+  background-color: gray;
+}
+
+.submitbutton{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 600px){
+  .Related-products{
+    display: flex;
+    flex-direction: column;
+  }
+  .week-keto-plan{
+    width: 70%;
+    margin-left: 18.5%;
+    margin-bottom: 5%;
+  }
+  .submitbutton{
+    margin-left: -10%;
+  }
+  .description ul,.description p{
+    text-align:left;
+    line-height: 200%;
+    margin-left: 10%;
+  }
+  .add-to-cart button{
+    padding: 3%;
+    width: 50%;
+    border-radius: 60px;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(218,37,37);
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .meal-plan-text{
+    position: relative;
+    width: 100%;
+    color: rgb(237, 243, 239);
+    font-size: 150%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin-top: -47%;
+    margin-bottom: 10%;
+    padding: 3%;
+}
+}
+
+
+
+
+.cd-cart__trigger,
+.cd-cart__content {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    transition: transform .2s;
+}
+

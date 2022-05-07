@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+* {
+  font-family: "Nunito", sans-serif;
+}
+/* top header */
+.top {
+   
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  padding-left: 190px;
+  padding-right: 200px;
+  z-index: 1000;
+  height: 25px;
+  padding-top: 5px;
+ 
+}
+.top_left {
+  display: flex;
+}
+.top_left > i {
+  color: #8ec038;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.top_left > p {
+  margin-right: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.top_right {
+  display: flex;
+  width: 16%;
+  justify-content: space-evenly;
+
+}
+.top_right >a> i{
+  color: black;
+}
+header {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: none;
+  border-top:  1px solid grey;;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  padding-left: 190px;
+  padding-right: 200px;
+  z-index: 1000;
+}
+/* navigation bar */
+header .logo {
+  /* border: 1px solid red; */
+  height: 40px;
+}
+/* navigation menu */
+#navbar > ul {
+  height: 60px;
+  width: 100%;
+  color: black;
+  padding-top: 30px;
+  
+}
+#navbar ul {
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+#navbar ul a {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: bold;
+  margin: 10px;
+}
+#navbar ul a:hover{
+  color: #8ec038;
+}
+#navbar ul a > i{
+  font-size: 18px;
+
+}
+.navopt {
+  color: black;
+ font-size: 14px;
+}
+.navop {
+  color: black;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+#navbar ul li {
+  float: left;
+  position: relative;
+  font-size: 5px;
+  padding: 5px;
+}
+
+
+#navbar ul ul {
+  position: absolute;
+  box-shadow: #0000003d 0px 3px 8px;
+  background-color: white;
+  width: 250px;
+  top: 100%;
+  display: none;
+  padding-left: 10px;
+  border-radius: 10px;
+ /* margin-top: 10px; */
+}
+
+#navbar ul li:hover > ul {
+  color: #8ec038;
+  display: block;
+  text-decoration: underline;
+}
+#navbar ul ul li:hover {
+  text-decoration: underline;
+ 
+}
+
+#home {
+  color: #8ec038;
+}
+.call {
+  background-color: #da2424;
+  color: white;
+  font-weight: bold;
+  padding: 15px 40px;
+  font-size: 17px;
+  border-radius: 40px;
+  border: none;
+  
+  /* margin-left: 150px; */
+}
+.call:hover {
+  background-color: #8ec038;
+}
+/* weight loss top div */
+/* weight loss top div */
+.weight_loss{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    /* height: 500px; */
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+#weight_loss_img{
+    width: 100%;
+    /* height: 60%; */
+    object-fit: cover;
+    opacity: 50%;
+    /* animation: zoom 25s infinite; */
+}
+.weight_loss_text{
+  position: absolute;
+  top: 48%;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  /* border: 1px solid red; */
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  /* padding-bottom: 50px; */ 
+}
+/* sing in*/
+#main{
+    margin: auto;
+    margin-top: 80px;
+    width: 50%;
+    height: 550px;
+    /* border: 3px solid #13A8B0; */
+}
+.login_input{
+    border: 1px solid grey;
+    height: 100%;
+    padding: 10px;
+    
+}
+#heading>h1{
+    font-size: 50px;
+   
+}
+.login_input > .input > label{
+    margin-bottom: 10px;
+    /* margin-bottom: 60px; */
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.input > input{
+    margin: 15px 0px;
+    padding: 15px;
+}
+.text{
+    
+    border-radius: 10px;
+    border: 1px solid grey;
+    height: 40px;
+    width: 90%;
+    margin-left: 17px
+}
+
+#singin>button{
+    border-radius: 10px;
+    border: 0px;
+    background-color: #da2424;
+    border-radius: 25px;
+    padding: 10px 70px;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+/* margin-left: 110px; */
+}
+
+/* food blog */
+.mid_div{
+display: flex;
+border: 1px solid red;
+width: 100%;
+height: 1200px;
+
+
+}
+.mid_div>div{
+  /* display: flex; */
+  border: 1px solid red;
+  /* margin: auto; */
+}
+.mid_div>.left{
+  width: 25%;
+}
+.mid_div>.left> input{
+  padding: 15px;
+  width: 200px;
+  border-radius: 20px;
+  /* margin: auto; */
+
+}
+.mid_div>.right{
+  width: 75%;
+}
+ 
+/* footer  */
+.footer_div{
+  background-color: 
+  #292d35;
+  color: white;
+  display: flex;
+  padding: 2% 8%;
+}
+.footer_div>div{
+  width: 25%;
+}
+.foot_explore> h1, .foot_links> h1, .foot_contact> h1, .foot_contact >i, .foot_contact >span{
+color: #8ec038;
+}
+.foot_social{
+  display: flex;
+ /* border: 1px solid red; */
+  width: 150px;
+  justify-content: space-between;
+  margin-top: 40;
+}
+.foot_social > div{
+  /* border: 1px solid red;  */
+  border-radius: 30px;
+  /* padding: 1px; */
+
+  background-color: #8ec038;
+}
+
+.copyright{
+  background-color: black;
+  margin-top: -16px;
+  color: white;
+  padding: 6px;
+  padding-left: 110px;
+  margin-bottom: -10px;
+  
+}
+.copyright> p> span{
+  color: #8ec038;
+}
+
+
+
+
+/* payment page */
+.container{
+
+  margin-left: 300px;
+}
+
+.otpIn{
+  display: none;
+}
+.payMainDiv >h3{
+  margin-left: 300px;
+
+}
+
+form{
+  /* border: 1px solid red; */
+  width: 60%;
+  margin: auto;
+  display: flex;
+
+}
+.inputBox> .name{
+  padding: 10px;
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.inputLeft{
+  /* border: 5px solid green; */
+  width: 80%;
+
+}
+#pay{
+  padding: 10px;
+  width: 250px;
+  margin: 20px 10px ;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: #292d35;
+  border: none;
+  margin-bottom: 20px;
+  color: white;
+}
+#pay:hover{
+  background-color: #8ec038;
+ 
+}
+.inputRight{
+  width: 50%;
+}
+.inputRight> input{
+   padding: 60px; 
+  border-radius: 20px;
+
+
+}

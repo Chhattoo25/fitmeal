@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Fitmeals</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="top_left">
+        <i class="material-icons">location_on</i>
+        <p>Food delivery only in Hyderabad</p>
+        <i class="material-icons">phone_in_talk</i>
+        <p>9100347480</p>
+        <i class="material-icons">mail_outline</i>
+        <p>fitmealsindia@gmail.com</p>
+      </div>
+      <div class="top_right">
+        <a class="dep navopt" id="home" href="#" > <i class="material-icons">search</i></a>
+          <a class="dep navopt" id="home" href="login.html" > <i class="material-icons">perm_identity</i></a>
+            <a class="dep navopt" id="home" href="cart.html" > <i class="material-icons">shopping_bag</i></a>
+              
+      </div>
+    </div>
+
+    <header>
+      <!-- navigation bar -->
+      <img class="logo" src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt="" />
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a class="dep navopt" id="home" href="../index.html" >Home</a>
+          </li>
+          <li>
+            <a class="dep navopt" href="#" >Meal Plan <i class="material-icons">keyboard_arrow_right</i></a>
+            <ul>
+              <li><a class="navop" href="weight_loss_meal_plan.html" > Weight Loss Meal Plan
+              </a>
+              </li>
+             
+              <li><a class="navop" href="https://www.fitmeals.co.in/services/maintenance-meal-plan/"> Maintenance Meal Plan
+              </a></li>
+                <li><a class="navop" href="https://www.fitmeals.co.in/services/athletic-plan/" > Athletic Meal Plan
+
+              </a></li>
+              <li><a class="navop"href="https://www.fitmeals.co.in/services/keto-meal-plan/">Keto Meal Plan
+              </a></li>
+              <li><a class="navop" href="https://www.fitmeals.co.in/services/6-weeks-transformation-challenge/"> Transformation Challenges
+              </a></li>
+
+            </ul>
+          </li>
+          <li>
+            <a class="dep navopt" href="#" >Health coaching</a>
+          </li>
+          <li>
+            <a  class="dep navopt" href="#">Products <i class="material-icons">keyboard_arrow_right</i></a>
+            <ul>
+              <li><a class="navop" href="./product.html"> Vegan Sweets
+              </a>
+              </li>
+              <li><a class="navop" href="https://www.fitmeals.co.in/product-category/products/low-calorie-sauces/">Low-Cal Sauces
+              </a></li>
+              <li><a class="navop" href="https://www.fitmeals.co.in/product-category/products/nut-butters/"> Nut Butters
+              </a></li>
+              <li><a class="navop" href="https://www.fitmeals.co.in/product-category/products/fresh-bakes/">Fresh Bakes
+              </a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dep navopt" href="./blog.html" >Blog</a>
+          </li>
+          <li>
+            <a  class="dep navopt" href="https://www.fitmeals.co.in/about-us/">About us <i class="material-icons">keyboard_arrow_right</i></a>
+            <ul>
+              <li><a class="navop"> Our story
+              </a>
+              </li>
+              <li><a class="navop">FAQ
+              </a>
+            </li>
+            <li><a class="navop"> Testinonials
+              </a></li>
+              
+            </ul>
+          </li>
+        </ul>
+       
+      </nav>
+      <button id="btn">Call:9100347480</button>
+    </header>
+    <!-- header parent -->
+    <div class="weight_loss">
+
+        <div class="weight_loss_text">
+        <h1>Vegan Sweets</h1>
+      </div>
+      </div>
+      
+    <!-- product page body main -->
+   
+    <div class="mid_div">
+     <div class="left">
+       <input type="text" id="search" placeholder="Search">
+       <div class="sortOption">
+        <div id="option">
+          <select name="" id="sortPrice" onchange="PriceSortMain()">
+            <option value="">All filters</option>
+            <option value="low">low to high</option>
+            <option value="high">high to low</option>
+          </select>
+        </div>
+        </div>
+      <button id="goCart">
+        view cart
+      </button>
+      <button  id="checkOut">
+        <a href="payment.html">Checkout</a>
+      </button>
+   
+     </div>
+     <div class="right">
+      <div id="container"></div> 
+     </div>
+</div>
+
+    <!-- footer -->
+    <div class="footer_div">
+      <div class="foot_logo">
+        <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          similique provident at mollitia accusamus, animi ab voluptatem ratione
+          molestiae sapiente pariatur fugit fugiat laudantium officiis dolore
+          neque nam. Animi, explicabo.
+        </p>
+        <div class="foot_social">
+          <div class="tweet">
+            <a href="https://twitter.com/SheIn_official" target="_blank">
+              <img
+                class="image"
+                src="https://img.ltwebstatic.com/images3_pi/2019/10/16/1571210709b727041b08a32f16e3d2a158d559948f.png"
+                alt=""
+              />
+            </a>
+          </div>
+         <div class="fb">
+          <a href="https://www.facebook.com/SHEINUS/" target="_blank">
+            <img
+              class="image"
+              src="https://img.ltwebstatic.com/images3_pi/2019/10/16/157121065670822a0559edc9a20136a111a4718145.png"
+              alt=""
+            />
+          </a>
+         </div>
+         <div class="insta">
+          <a href="https://www.instagram.com/shein_us/" target="_blank">
+            <img
+              class="image"
+              src="https://img.ltwebstatic.com/images3_pi/2019/10/16/15712106679a688cf6cea076cff889b0a6b7889997.png"
+              alt=""
+            />
+          </a>
+         </div>
+         
+        </div>
+      </div>
+      <div class="foot_explore">
+        <h1>Explore</h1>
+        <i class="material-icons">navigate_next</i>
+        <span>Home</span>
+        <br>
+        <i class="material-icons">navigate_next</i>
+        <span>Meal Plans</span>
+      </div>
+      <div class="foot_links">
+        <h1>Links</h1>
+        <i class="material-icons">navigate_next</i>
+        <span>About Us</span>
+        <br>
+        <i class="material-icons">navigate_next</i>
+        <span>Blog</span>
+        <br>
+        <i class="material-icons">navigate_next</i>
+        <span>FAQ</span>
+        <br>
+        <i class="material-icons">navigate_next</i>
+        <span>Testimonials</span>
+      </div>
+      <div class="foot_contact">
+        <h1>Contact</h1>
+        <i class="material-icons">phone_in_talk</i>
+        <span>Call Us</span>
+        <p>9100347480</p>
+        <p>9963697412</p>
+        <i class="material-icons">mail_outline</i>
+        <span>Email Us:</span>
+        <p>fitmealsindia@gmail.com</p>
+        <i class="material-icons">location_on</i>
+        <span>Our Location</span>
+        <p>Banjara Hills, Road no.5, Hyderabad</p></div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2021. &nbsp; <span>FitMeals. </span>All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
+<script src="product.js"></script>

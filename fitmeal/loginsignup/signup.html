@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/top.css">
+    <link rel="stylesheet" href="../Styles/logsign.css">
+    <link rel="stylesheet" href="../allotherfiles/navbar.css">
+    <style>
+
+    #createsubmit {
+        font-family: "Roboto", sans-serif;
+        outline: 1;
+
+        background-color: black !important;
+        color: white;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 18px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 5px grey;
+    }
+
+    #createsubmit:hover {
+        background-color: #222222   !important;
+        /* color: red; */
+    }
+    .footer-below{
+     background-color: #292D35;
+     z-index:9999;
+     position:sticky;
+ }
+
+ .footer-background-image{
+     width:100%;
+     background-color: black;
+     height:400px;
+ }
+</style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="head2"></div>
+    <div id="signup-page">
+        <h1 id="hlogin">Create Account</h1>
+        <div class="form">
+
+            <form id="signup-form">
+                <input type="text" id="name" name="name" placeholder="First Name" required />
+                <input type="text" id="lastname"name="lastname"  placeholder="Last Name" required />
+                <input type="email" id="email" name="email" placeholder="Email Address" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <input id="createsubmit" type="submit" value="Create" />
+                <!-- <button type = "submit" id="createsubmit" onclick="createAcc()">Create</button> -->
+
+            </form>
+
+        </div>
+
+
+
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+
+<script type="module">
+    import {navbar2,footeri} from "../header/data.js"
+    let head = document.getElementById("navbar")
+    head.innerHTML = navbar2()
+     let foot = document.getElementById("footer")
+     foot.innerHTML = footeri()
+</script>
+
+<script>
+    
+    let arr = []
+    const createAcc=()=>{
+
+        event.preventDefault()
+        let name = document.getElementById("name").value 
+        let lastname  = document.getElementById("lastname").value 
+        let email = document.getElementById("email").value 
+        let password  = document.getElementById("password").value 
+        function signup(n,l,e,p){
+            this.name = name;
+            this.lastname = lastname;
+            this.email = email;
+            this.password = password;
+        }
+        let pro = new signup(name,lastname,email,password)
+        arr.push(pro)
+        console.log(arr)
+        localStorage.setItem("signupdetails",JSON.stringify(arr))
+        window.location.href= "login.html"
+    }
+ document.getElementById("signup-form").addEventListener("submit",createAcc)
+
+//    const createAcc=(e)=>{
+   
+//     event.preventDefault()
+    
+    
+ 
+//    }
+   
+</script>
